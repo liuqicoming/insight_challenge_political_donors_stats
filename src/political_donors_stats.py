@@ -31,14 +31,14 @@ OTHER_ID(15):
 8.write to zip_file line by line
 9.sort list and then write to date_file 
 """
-zip_file = open("G:\\graduate_career\\data_scientist\\job_seeking\\data_insight\\medianvals_by_zip.txt",'w')
-dt_file = open("G:\\graduate_career\\data_scientist\\job_seeking\\data_insight\\medianvals_by_date.txt",'w')
+zip_file = open("find-political-donors/output/medianvals_by_zip.txt",'w')
+dt_file = open("find-political-donors/output/medianvals_by_date.txt",'w')
 
 stats_zip = {} # this dictionary store CMTE_ID and ZIP_CODE as identifier and also TRANSACTION_AMT appeared so far
 stats_dt ={}
 
 breaker = 0
-with open("G:\\graduate_career\\data_scientist\\job_seeking\\data_insight\\itcont_1000.txt") as itcont:
+with open("find-political-donors/input/itcont_1000.txt") as itcont:
     for line in itcont:
         breaker+= 1
         if breaker ==1000:
