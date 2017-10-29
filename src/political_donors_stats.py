@@ -31,14 +31,18 @@ OTHER_ID(15):
 8.write to zip_file line by line
 9.sort list and then write to date_file 
 """
-zip_file = open("find-political-donors/output/medianvals_by_zip.txt",'w')
-dt_file = open("find-political-donors/output/medianvals_by_date.txt",'w')
+import os
+dirname = os.path.dirname
+parentpath =dirname(dirname(os.path.abspath("political_donors_stats.py")))
+
+zip_file = open(parentpath+"\\output\\medianvals_by_zip.txt",'w')
+dt_file = open(parentpath+"\\output\\medianvals_by_date.txt",'w')
 
 stats_zip = {} # this dictionary store CMTE_ID and ZIP_CODE as identifier and also TRANSACTION_AMT appeared so far
 stats_dt ={}
 
 breaker = 0
-with open("find-political-donors/input/itcont_1000.txt") as itcont:
+with open(parentpath+"\\input\\"+raw_input('Input txt file name including ".txt":')) as itcont:
     for line in itcont:
         breaker+= 1
         if breaker ==1000:
@@ -85,6 +89,7 @@ for ID in sorted(stats_dt.keys()):
     for line_dt in sorted(stats_dt[ID].items(),  key= lambda x:x[1][4]):
         dt_file.write(ID+'|'+line_dt[0]+'|'+str(line_dt[1][2])+'|'+str(line_dt[1][0])+'|'+str(line_dt[1][3])+'\n')
 
+print "output file finished, please check in the"+ '"output"'+"folder"
 itcont.close()
 zip_file.close()
 dt_file.close()    
