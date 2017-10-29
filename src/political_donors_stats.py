@@ -41,8 +41,9 @@ dt_file = open(parentpath+"\\output\\medianvals_by_date.txt",'w')
 stats_zip = {} # this dictionary store CMTE_ID and ZIP_CODE as identifier and also TRANSACTION_AMT appeared so far
 stats_dt ={}
 
+print "Start reading data"
 breaker = 0
-with open(parentpath+"\\input\\"+raw_input('Input txt file name including ".txt":')) as itcont:
+with open(parentpath+"\\input\\itcont.txt") as itcont:
     for line in itcont:
         breaker+= 1
         if breaker ==1000:
