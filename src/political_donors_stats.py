@@ -33,7 +33,7 @@ OTHER_ID(15):
 """
 import os
 dirname = os.path.dirname
-parentpath =dirname(dirname(os.path.abspath("political_donors_stats.py")))
+parentpath =dirname(os.path.abspath("political_donors_stats.py"))
 
 zip_file = open(parentpath+"\\output\\medianvals_by_zip.txt",'w')
 dt_file = open(parentpath+"\\output\\medianvals_by_date.txt",'w')
