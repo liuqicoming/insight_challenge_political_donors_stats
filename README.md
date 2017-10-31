@@ -4,7 +4,6 @@
 3. [Data processing](README.md#data-processing)
 4. [Output files](README.md#output-files)
 5. [Example](README.md#example)
-6. [Repo directory structure](README.md#repo-directory-structure)
 
 
 # Introduction

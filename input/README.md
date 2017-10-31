@@ -1,1 +1,1 @@
-This is the directory where your program would find any test input files.
+This is the directory where my program would find any test input files. Make sure the file name is "itcont.txt"
