@@ -66,35 +66,3 @@ Processing all of the input lines, the entire contents of `medianvals_by_zip.txt
     C00384818|01122017|292|2|583
 
 
-## Repo directory structure
-
-The directory structure for your repo should look like this:
-
-    ©À©¤©¤ README.md 
-    ©À©¤©¤ run.sh
-    ©À©¤©¤ src
-    ©¦   ©¸©¤©¤ find_political_donors.py
-    ©À©¤©¤ input
-    ©¦   ©¸©¤©¤ itcont.txt
-    ©À©¤©¤ output
-    |   ©¸©¤©¤ medianvals_by_zip.txt
-    |   ©¸©¤©¤ medianvals_by_date.txt
-    ©À©¤©¤ insight_testsuite
-        ©¸©¤©¤ run_tests.sh
-        ©¸©¤©¤ tests
-            ©¸©¤©¤ test_1
-            |   ©À©¤©¤ input
-            |   ©¦   ©¸©¤©¤ itcont.txt
-            |   |__ output
-            |   ©¦   ©¸©¤©¤ medianvals_by_zip.txt
-            |   |__ ©¸©¤©¤ medianvals_by_date.txt
-            ©À©¤©¤ your-own-test
-                ©À©¤©¤ input
-                ©¦   ©¸©¤©¤ your-own-input.txt
-                |©¤©¤ output
-                    ©¸©¤©¤ medianvals_by_zip.txt
-                    ©¸©¤©¤ medianvals_by_date.txt
-
-
-
-`cc@insightdataengineering.com`.
